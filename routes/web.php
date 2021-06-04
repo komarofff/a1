@@ -21,6 +21,10 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/request', [App\Http\Controllers\PageController::class, 'request'])->name('request');
+Route::get('/check1', [App\Http\Controllers\PageController::class, 'check1'])->name('check1');
+Route::get('/check2', [App\Http\Controllers\PageController::class, 'check2'])->name('check2');
+Route::get('/accept', [App\Http\Controllers\PageController::class, 'accept'])->name('accept');
+
 Route::get('/clear', function() {
     Artisan::call('cache:clear');
     Artisan::call('config:cache');

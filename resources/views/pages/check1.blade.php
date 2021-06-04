@@ -1,31 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends ('layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Request page.Only desktop version</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
+@section('title', 'ForwarderOne-request page. Only desktop version')
+@section('description', 'ForwarderOne-request page -description')
+@section('og')
 
-<body class="container">
+@endsection
+@section('style')
+
+@endsection
+@section('scripts')
+<!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
+@endsection
+
+@section('content')
     <header class="header">
         <img class="header__banner" src="img/header/banner-request.png" srcset="img/header/banner-request@2x.png 2x,
              img/header/banner-request@3x.png 3x">
 
-        <div class="header__topmenu">
-            <img class="header__logo" src="img/header/logo.png"
-                srcset="img/header/logo@2x.png 2x,img/header/logo@3x.png 3x">
-            <nav class="header__topmenu-list">
-                <ul>
-                    <li><a class="header__topmenu-list_link" href="#">About Us</a></li>
-                    <li><a class="header__topmenu-list_link" href="#">Pricing</a></li>
-                    <li><a class="header__topmenu-list_link" href="#">FAQ</a></li>
-                </ul>
-            </nav>
-        </div>
+             @include('layouts.partials.topmenu', ['menu'=> [
+    ['link' => '#', 'title' => 'About Us'],
+    ['link' => '#', 'title' => 'Pricing'],
+    ['link' => '#', 'title' => 'FAQ']
+    ]]
+    )
         <div class="header__content request-header-content">
             <p class="header__content-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habes, inquam, Cato, formam eorum, de quibus
@@ -187,37 +184,8 @@
                 </div>
             </div>
         </section>
-        <section class="main__care">
-            <div class="grid">
-                <div class="main__care-area">
-                    <p class="h2">Let us take care about your goods shipments!</p>
-                    <a class="button-link margin-top" href="#">Get a quote</a>
-                    <img class="big-logo" src="img/big-logo.png"
-                        srcset="img/big-logo@2x.png 2x,   img/big-logo@3x.png 3x">
-                </div>
-            </div>
-        </section>
-
+       
     </main>
-    <footer class="footer padding-both-vertical">
-        <div class="grid">
-            <div class="footer__area">
-                <img class="header__logo" src="img/footer/logo-copy.png"
-                    srcset="img/footer/logo-copy@2x.png 2x,img/footer/logo-copy@3x.png 3x">
-                <div class="row-between">
-                    <p class="text-upper stripe"> ©2020 by ForwarderOne FBA Logistics. </p>
-                    <p class="text-upper stripe"> Service@ForwarderOne.com </p>
-                    <p class="text-upper ">
-                        <span class="material-icons">facebook</span>
-                        follow us on facebook
-                    </p>
+    @include('layouts.partials.footer')
 
-                </div>
-
-            </div>
-        </div>
-    </footer>
-
-</body>
-
-</html>
+@endsection
