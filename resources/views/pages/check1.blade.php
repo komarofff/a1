@@ -14,7 +14,7 @@
 
 @section('content')
     <header class="header">
-        <img class="header__banner" src="{{asset('/img/header/banner-check.png')}}" srcset="{{asset('/img/header/banner-check@2x.png')}}'">
+        <img class="header__banner" src="{{asset('/img/header/banner-check.png')}}" srcset="{{asset('/img/header/banner-check@2x.png')}}">
 
              @include('layouts.partials.topmenu', ['menu'=> [ 
     ['link' => '#', 'title' => 'About Us'],
