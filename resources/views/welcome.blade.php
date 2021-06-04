@@ -6,8 +6,8 @@
 
 @endsection
 @section('style')
-<link rel="stylesheet" type="text/css" href="./slider/slick/slick.css"> 
-<link rel="stylesheet" type="text/css" href="./slider/slick/slick-theme.css"> 
+<link rel="stylesheet" type="text/css" href="{{asset('/slider/slick/slick.css')}}"> 
+<link rel="stylesheet" type="text/css" href="{{asset('/slider/slick/slick-theme.css')}}"> 
 @endsection
 @section('scripts')
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
@@ -28,8 +28,7 @@ $('.main__testimonials-slider').slick({
 
 @section('content')
 <header class="header">
-    <img class="header__banner" src="img/header/cameron-venti-1-cq-icr-wfqbi-unsplash-copy.jpg" srcset="img/header/cameron-venti-1-cq-icr-wfqbi-unsplash-copy@2x.jpg 2x,
-             img/header/cameron-venti-1-cq-icr-wfqbi-unsplash-copy@3x.jpg 3x">
+    <img class="header__banner" src="{{asset('/img/header/cameron-venti-1-cq-icr-wfqbi-unsplash-copy.jpg')}}" srcset="{{asset('/img/header/cameron-venti-1-cq-icr-wfqbi-unsplash-copy@2x.jpg')}}">
     @include('layouts.partials.topmenu', ['menu'=> [
     ['link' => '#', 'title' => 'About Us'],
     ['link' => '#', 'title' => 'Pricing'],
@@ -47,26 +46,26 @@ $('.main__testimonials-slider').slick({
     <div class="header__block">
         <div class="header__block-list">
             <p class="header__block-list-link">
-                <img class="header__block-list-image" src="img/header/layer-24.png"
-                    srcset="img/header/layer-24@2x.png 2x,img/header/layer-24@3x.png 3x">
+                <img class="header__block-list-image" src="{{asset('/img/header/layer-24.png')}}"
+                    srcset="{{asset('/img/header/layer-24@2x.png')}}">
                 <span class="h3">Shipping</span>
                 <span class="text">An hoc usque quaque</span>
             </p>
             <p class="header__block-list-link">
-                <img class="header__block-list-image" src="img/header/layer-28.png"
-                    srcset="img/header/layer-28@2x.png 2x,img/header/layer-28@3x.png 3x">
+                <img class="header__block-list-image" src="{{asset('/img/header/layer-28.png')}}"
+                    srcset="{{asset('/img/header/layer-28@2x.png')}}">
                 <span class="h3">Tracking</span>
                 <span class="text">An hoc usque quaque</span>
             </p>
             <p class="header__block-list-link">
-                <img class="header__block-list-image" src="img/header/layer-37.png"
-                    srcset="img/header/layer-37@2x.png 2x,img/header/layer-37@3x.png 3x">
+                <img class="header__block-list-image" src="{{asset('/img/header/layer-37.png')}}"
+                    srcset="{{asset('/img/header/layer-37@2x.png')}}">
                 <span class="h3">Train</span>
                 <span class="text">An hoc usque quaque</span>
             </p>
             <p class="header__block-list-link">
-                <img class="header__block-list-image" src="img/header/layer-29.png"
-                    srcset="img/header/layer-29@2x.png 2x,img/header/layer-29@3x.png 3x">
+                <img class="header__block-list-image" src="{{asset('/img/header/layer-29.png')}}"
+                    srcset="{{asset('/img/header/layer-29@2x.png')}}">
                 <span class="h3">Plane</span>
                 <span class="text">An hoc usque quaque</span>
             </p>
@@ -80,24 +79,24 @@ $('.main__testimonials-slider').slick({
         <div class="grid">
             <div class="main__blocks ">
                 <div class="main__people-block">
-                    <img class="main__people-image" src="img/main/layer-34.jpg"
-                        srcset="img/main/layer-34@2x.jpg 2x,    img/main/layer-34@3x.jpg 3x">
+                    <img class="main__people-image" src="{{asset('/img/main/layer-34.jpg')}}"
+                        srcset="{{asset('/img/main/layer-34@2x.jpg')}}">
                     <p class="h3">JOHN DOE</p>
                     <p class="small-text">
                         Deinde prima illa, quae in congressu solemus: Quid tu, inquit, huc? Sed tamen omne, quod de.
                     </p>
                 </div>
                 <div class="main__people-block ">
-                    <img class="main__people-image" src="img/main/layer-36.jpg"
-                        srcset="img/main/layer-36@2x.jpg 2x,    img/main/layer-36@3x.jpg 3x">
+                    <img class="main__people-image" src="{{asset('/img/main/layer-36.jpg')}}"
+                        srcset="{{asset('/img/main/layer-36@2x.jpg')}}">
                     <p class="h3">Jenelyn Doe</p>
                     <p class="small-text">
                         Deinde prima illa, quae in congressu solemus: Quid tu, inquit, huc? Sed tamen omne, quod de.
                     </p>
                 </div>
                 <div class="main__people-block">
-                    <img class="main__people-image" src="img/main/layer-35.jpg"
-                        srcset="img/main/layer-35@2x.jpg 2x,    img/main/layer-35@3x.jpg 3x">
+                    <img class="main__people-image" src="{{asset('/img/main/layer-35.jpg')}}"
+                        srcset="{{asset('/img/main/layer-35@2x.jpg')}}">
                     <p class="h3">Alex DOE</p>
                     <p class="small-text">
                         Deinde prima illa, quae in congressu solemus: Quid tu, inquit, huc? Sed tamen omne, quod de.
@@ -127,8 +126,8 @@ $('.main__testimonials-slider').slick({
                     </p>
                 </div>
                 <div class="main__image-block-right">
-                    <img class="main__description-image" src="img/main/main-description-image.png"
-                        srcset="img/main/main-description-image.png 2x,    img/main/main-description-image.png 3x">
+                    <img class="main__description-image" src="{{asset('/img/main/main-description-image.png')}}"
+                        srcset="{{asset('/img/main/main-description-image.png')}}">
                 </div>
             </div>
         </div>
@@ -137,8 +136,8 @@ $('.main__testimonials-slider').slick({
         <div class="grid">
             <div class="main__description-block-left ">
                 <div class="main__image-block-left">
-                    <img class="main__description-image" src="img/main/main-description-image.png"
-                        srcset="img/main/main-description-image.png 2x,    img/main/main-description-image.png 3x">
+                    <img class="main__description-image" src="{{asset('/img/main/main-description-image.png')}}"
+                        srcset="{{asset('/img/main/main-description-image.png')}}">
                 </div>
                 <div class="main__description-block">
                     <p class="h3 red">Unlimited opportunities for your business</p>
@@ -168,8 +167,8 @@ $('.main__testimonials-slider').slick({
                     <div class="main__testimonials-slider-block">
                         <p class="h3 white">Testimonials</p>
                         <p class="h2 white">What our members have to say...</p>
-                        <img class="testimonials-small-image" src="img/main/layer-43.jpg"
-                            srcset="img/main/layer-43@2x.jpg 2x,    img/main/layer-43@3x.jpg 3x">
+                        <img class="testimonials-small-image" src="{{asset('/img/main/layer-43.jpg')}}"
+                            srcset="{{asset('/img/main/layer-43@2x.jpg')}}">
                         <p class="big-text white">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habes, inquam, Cato, formam eorum,
                             de quibus loquor, philosophorum. Ad eas enim res ab Epicuro praecepta dantur. Urgent tamen
@@ -191,8 +190,8 @@ $('.main__testimonials-slider').slick({
                     <div class="main__testimonials-slider-block">
                         <p class="h3 white">Testimonials</p>
                         <p class="h2 white">What our members have to say...</p>
-                        <img class="testimonials-small-image" src="img/main/layer-43.jpg"
-                            srcset="img/main/layer-43@2x.jpg 2x,    img/main/layer-43@3x.jpg 3x">
+                        <img class="testimonials-small-image" src="{{asset('/img/main/layer-43.jpg')}}"
+                            srcset="{{asset('/img/main/layer-43@2x.jpg')}}">
                         <p class="big-text white">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habes, inquam, Cato, formam eorum,
                             de quibus loquor, philosophorum. Ad eas enim res ab Epicuro praecepta dantur. Urgent tamen
@@ -214,8 +213,8 @@ $('.main__testimonials-slider').slick({
                     <div class="main__testimonials-slider-block">
                         <p class="h3 white">Testimonials</p>
                         <p class="h2 white">What our members have to say...</p>
-                        <img class="testimonials-small-image" src="img/main/layer-43.jpg"
-                            srcset="img/main/layer-43@2x.jpg 2x,    img/main/layer-43@3x.jpg 3x">
+                        <img class="testimonials-small-image" src="{{asset('/img/main/layer-43.jpg')}}"
+                            srcset="{{asset('/img/main/layer-43@2x.jpg')}}">
                         <p class="big-text white">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habes, inquam, Cato, formam eorum,
                             de quibus loquor, philosophorum. Ad eas enim res ab Epicuro praecepta dantur. Urgent tamen
@@ -243,8 +242,8 @@ $('.main__testimonials-slider').slick({
         <div class="grid">
             <div class="main__advantages-area">
                 <div class="main__advantages-block">
-                    <img class="advantages-block-image" src="img/main/layer-59.png"
-                        srcset="img/main/layer-59@2x.png 2x, img/main/layer-59@3x.png 3x">
+                    <img class="advantages-block-image" src="{{asset('/img/main/layer-59.png')}}"
+                        srcset="{{asset('/img/main/layer-59@2x.png')}}">
                     <p class="h2">Advantage title</p>
                     <p class="text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habes, inquam, Cato, formam eorum,
@@ -253,11 +252,11 @@ $('.main__testimonials-slider').slick({
                     </p>
                     <a class="small-button-link" href="#">Learn more</a>
                 </div>
-                <img class="advantages-block-stripe" src="img/main/layer-45.png"
-                    srcset="img/main/layer-45@2x.png 2x, img/main/layer-45@3x.png 3x">
+                <img class="advantages-block-stripe" src="{{asset('/img/main/layer-45.png')}}"
+                        srcset="{{asset('/img/main/layer-45@2x.png')}}">
                 <div class="main__advantages-block">
-                    <img class="advantages-block-image" src="img/main/layer-60.png"
-                        srcset="img/main/layer-60@2x.png 2x, img/main/layer-60@3x.png 3x">
+                    <img class="advantages-block-image" src="{{asset('/img/main/layer-60.png')}}"
+                        srcset="{{asset('/img/main/layer-60@2x.png')}}">
                     <p class="h2">Advantage title</p>
                     <p class="text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habes, inquam, Cato, formam eorum,
@@ -274,8 +273,8 @@ $('.main__testimonials-slider').slick({
         <div class="grid">
             <div class="main__inquire-area">
                 <div class="main__inquire-block">
-                    <img class="red-circle" src="img/main/red-circle.png"
-                        srcset="img/main/red-circle@2x.png 2x,   img/main/red-circle@3x.png 3x">
+                    <img class="red-circle" src="{{asset('/img/main/red-circle.png')}}"
+                        srcset="{{asset('/img/main/red-circle@2x.png')}}">
                     <div class="white-circle">
                         <p class="h3">1</p>
                     </div>
@@ -285,8 +284,8 @@ $('.main__testimonials-slider').slick({
                     </p>
                 </div>
                 <div class="main__inquire-block">
-                    <img class="red-circle" src="img/main/red-circle.png"
-                        srcset="img/main/red-circle@2x.png 2x,   img/main/red-circle@3x.png 3x">
+                    <img class="red-circle" src="{{asset('/img/main/red-circle.png')}}"
+                        srcset="{{asset('/img/main/red-circle@2x.png')}}">
                     <div class="white-circle">
                         <p class="h3">2</p>
                     </div>
@@ -296,8 +295,8 @@ $('.main__testimonials-slider').slick({
                     </p>
                 </div>
                 <div class="main__inquire-block">
-                    <img class="red-circle" src="img/main/red-circle.png"
-                        srcset="img/main/red-circle@2x.png 2x,   img/main/red-circle@3x.png 3x">
+                    <img class="red-circle" src="{{asset('/img/main/red-circle.png')}}"
+                        srcset="{{asset('/img/main/red-circle@2x.png')}}">
                     <div class="white-circle">
                         <p class="h3">3</p>
                     </div>
@@ -307,8 +306,8 @@ $('.main__testimonials-slider').slick({
                     </p>
                 </div>
                 <div class="main__inquire-block">
-                    <img class="red-circle" src="img/main/red-circle.png"
-                        srcset="img/main/red-circle@2x.png 2x,   img/main/red-circle@3x.png 3x">
+                    <img class="red-circle" src="{{asset('/img/main/red-circle.png')}}"
+                        srcset="{{asset('/img/main/red-circle@2x.png')}}">
                     <div class="white-circle">
                         <p class="h3">4</p>
                     </div>

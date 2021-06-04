@@ -1,12 +1,7 @@
 .slick-list {
   max-height: 700px;
 }
-.footer_gray {
-  grid-column: 1/15;
-  width: 100%;
-  margin-top: 0;
-  min-width: 100%;
-}
+
 @media (min-width: 2000px) {
   .main {
     margin-top: 0;

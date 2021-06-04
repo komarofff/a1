@@ -1,7 +1,7 @@
 @extends ('layouts.app')
 
-@section('title', 'ForwarderOne-index. Only desktop version')
-@section('description', 'ForwarderOne -description')
+@section('title', 'ForwarderOne-request page. Only desktop version')
+@section('description', 'ForwarderOne-request page -description')
 @section('og')
 
 @endsection
@@ -9,7 +9,7 @@
 
 @endsection
 @section('scripts')
-<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
 @endsection
 
 @section('content')

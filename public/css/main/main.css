@@ -220,6 +220,7 @@
   position: relative;
   margin: 50px 0;
   max-width: 100%;
+  width: 186px;
 }
 .white-circle {
   width: 59px;
@@ -258,7 +259,7 @@
   justify-content: center;
   align-items: center;
 }
-.main__care2 {
+.main__care_2 {
   grid-column: 1/15;
   min-width: 100%;
   background: var(--color-gray);

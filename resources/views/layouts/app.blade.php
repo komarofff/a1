@@ -7,7 +7,7 @@
     <!-- <link href="{{asset('img/ico/favicon.ico')}}" rel="shortcut icon"/> -->
     <title>@yield ('title')</title>
     <meta name="description" content="@yield('description')"/>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{asset('/css/style.css')}}">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     @yield('og')
     @yield ('style')    
