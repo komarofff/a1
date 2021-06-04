@@ -21,3 +21,10 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/request', [App\Http\Controllers\PageController::class, 'request'])->name('request');
+Route::get('/clear', function() {
+    Artisan::call('cache:clear');
+    Artisan::call('config:cache');
+    Artisan::call('view:clear');
+	Artisan::call('route:clear');
+    return "Кэш очищен.";
+});
