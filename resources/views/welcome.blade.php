@@ -6,7 +6,8 @@
 
 @endsection
 @section('style')
-
+<link rel="stylesheet" type="text/css" href="./slider/slick/slick.css"> 
+<link rel="stylesheet" type="text/css" href="./slider/slick/slick-theme.css"> 
 @endsection
 @section('scripts')
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>

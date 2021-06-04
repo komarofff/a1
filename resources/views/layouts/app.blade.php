@@ -9,8 +9,6 @@
     <meta name="description" content="@yield('description')"/>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./slider/slick/slick.css"> 
-    <link rel="stylesheet" type="text/css" href="./slider/slick/slick-theme.css"> 
     @yield('og')
     @yield ('style')    
 </head>
