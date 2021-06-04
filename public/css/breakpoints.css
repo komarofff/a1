@@ -6,6 +6,7 @@
   .main {
     margin-top: 0;
   }
+  .main .main__care{margin-top:0;}
    .grid {
     width: 1920px;
   } 
@@ -32,6 +33,7 @@
   .main {
     margin-top: calc(200px + 7%);
   }
+  .main .main__care{margin-top:0;}
   .request {
     margin-top: 0;
   }
@@ -58,6 +60,7 @@
   .main {
     margin-top: calc(200px + 14%);
   }
+  .main .main__care{margin-top:0;}
   .request {
     margin-top: 0;
   }
@@ -120,6 +123,7 @@
   .main {
     margin-top: calc(200px + 18%);
   }
+  .main .main__care{margin-top:0;}
   .request {
     margin-top: 0;
   }

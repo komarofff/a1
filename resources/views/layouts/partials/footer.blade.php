@@ -1,4 +1,4 @@
-<section class="main__care_2">
+<section class="main main__care" style="margin-top:0;">
         <div class="grid">
             <div class="main__care-area">
                 <p class="h2">Let us take care about your goods shipments!</p>
