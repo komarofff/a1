@@ -24,7 +24,7 @@
   .request__blocks,
   .request__product-forms,
   .request__destination,
-  .request-header-content {
+  .request-header-content ,.check__block_2_column{
     width: 100%;
     grid-column: 2/14;
   }
@@ -81,7 +81,7 @@
   .main__description-block-left,
   .request__blocks,
   .request__product-forms,
-  .request__destination {
+  .request__destination,.check__block_2_column,check__cards {
     width: 100%;
     grid-column: 1/15;
   }
