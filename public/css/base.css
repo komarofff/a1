@@ -15,7 +15,7 @@ html {
   color: var(--font-color-light);
   background: var(--color-white);
 }
-.container { 
+.container {
   width: 100%;
   max-width: var(--container-width);
   margin: 0 auto;
@@ -45,6 +45,18 @@ html {
   color: var(--font-color-dark);
   opacity: 1;
 }
+.h2-smaller {
+  font-family: Teko;
+  font-size: 281%;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.83;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--font-color-dark);
+  opacity: 1;
+}
 .h3 {
   text-transform: uppercase;
   margin-top: 35px;
@@ -58,6 +70,18 @@ html {
   text-align: left;
   color: var(--font-color-darker);
   margin-bottom: 0;
+}
+.h3-dark{
+  font-family: Teko;
+  font-size: 218%;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--font-color-dark);
 }
 p {
   padding-top: 0;
@@ -87,16 +111,15 @@ p {
   text-align: center;
   color: #999999;
   text-transform: uppercase;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom:0;
+  padding-bottom: 0;
   margin-bottom: 0;
-  
 }
 .big-text {
   max-width: 900px;
-  margin-top:28px;
+  margin-top: 28px;
   font-family: Futura;
   font-size: 137.5%;
   font-weight: normal;
@@ -108,7 +131,6 @@ p {
   color: var(--font-color-light);
 }
 .small-text {
- 
   font-family: Futura;
   font-size: 106%;
   font-weight: normal;
@@ -120,8 +142,8 @@ p {
   color: var(--font-color-light);
 }
 .smaller-text {
-  margin-top:0;
-  padding-top:0;
+  margin-top: 0;
+  padding-top: 0;
   font-family: Futura;
   font-size: 87.5%;
   font-weight: normal;
@@ -144,43 +166,112 @@ p {
 .red {
   color: var(--color-red);
 }
-.white{
+.white {
   color: var(--color-white);
 }
-.blue{
+.blue {
   color: var(--color-blue);
   margin-top: 50px;
   cursor: pointer;
 }
-.bottom-margin-none{
+.bottom-margin-none {
   margin-bottom: 0;
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
-.star .material-icons{
+.star .material-icons {
   color: var(--color-white);
   font-size: 175%;
 }
-.text-upper .material-icons{
+.text-upper .material-icons {
   color: var(--color-red);
   font-size: 175%;
 }
-.margin-top{
-  margin-top:30px;
+.margin-top {
+  margin-top: 30px;
 }
-.row-between{
+.row-between {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.row-between2{
+.row-between2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.stripe::after{
-  content: '|';
+.stripe::after {
+  content: "|";
   margin: 0 20px;
 }
-.padding-both-vertical{
+.padding-both-vertical {
   padding: 80px 10px;
+}
+.arrow-left {
+  position: relative;
+  font-family: Teko;
+  font-size: 30.5px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.46;
+  letter-spacing: 3.05px;
+  text-align: left;
+  padding-left: 30px;
+  color: var(--color-red);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.arrow-left::before {
+  position: absolute;
+  content: url(../img/header/arrow-right-red.png);
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  margin-left: -30px;
+  margin-top: 2px;
+}
+
+.arrow-right {
+  text-decoration: none;
+  position: relative;
+  font-family: Teko;
+  font-size: 30.5px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.46;
+  letter-spacing: 3.05px;
+  text-align: right;
+  color: var(--color-red);
+  text-transform: uppercase;
+  padding-right: 30px;
+}
+.arrow-right::after {
+  position: absolute;
+  margin-top: -5px;
+  margin-left: 10px;
+  content: url(../img/header/arrow-right-red.png);
+}
+
+.arrow-left,
+.arrow-right {
+  cursor: pointer;
+}
+.price-table-h2 {
+  font-family: Teko;
+  font-size: 35px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--font-color-dark);
+}
+.border-red {
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--color-red);
+  margin-bottom: 30px;
 }

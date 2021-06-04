@@ -1,7 +1,7 @@
 @extends ('layouts.app')
 
-@section('title', 'ForwarderOne-request page. Only desktop version')
-@section('description', 'ForwarderOne-request page -description')
+@section('title', 'ForwarderOne-check2 page. Only desktop version')
+@section('description', 'ForwarderOne-check2 page -description')
 @section('og')
 
 @endsection
@@ -14,16 +14,15 @@
 
 @section('content')
     <header class="header">
-        <img class="header__banner" src="img/header/banner-request.png" srcset="img/header/banner-request@2x.png 2x,
-             img/header/banner-request@3x.png 3x">
+        <img class="header__banner" src="{{asset('/img/header/banner-check.png')}}" srcset="{{asset('/img/header/banner-check@2x.png')}}'">
 
-             @include('layouts.partials.topmenu', ['menu'=> [
+             @include('layouts.partials.topmenu', ['menu'=> [ 
     ['link' => '#', 'title' => 'About Us'],
     ['link' => '#', 'title' => 'Pricing'],
     ['link' => '#', 'title' => 'FAQ']
     ]]
     )
-        <div class="header__content request-header-content">
+    <div class="header__content request-header-content">
             <p class="header__content-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habes, inquam, Cato, formam eorum, de quibus
                 loquor praecepta dantur.
@@ -39,152 +38,168 @@
     </header>
     <main class=" grid main request">
         <section class="main__people-blocks padding-both-vertical">
-            <p class="h2">Create Your Request</p>
-            <div class="grid">
+            <p class="h2">Ensure That Everything's Correct</p>
+            <div class="grid margin-top">
 
-                <form class="request__blocks" action="#" id="">
-                    <div class="request-single-block">
-                        <label class="h3" for="name">Let's Get Acquainted?</label>
-                        <input class="request-input-text" type="text" value="" name="" id="name"
-                            placeholder="Your name...">
-                        <label class="h3" for="incoterm">Incoterm?</label>
-                        <input class="request-input-text" type="text" value="" name="" id="incoterm" placeholder="EXW"
-                            list="incoterm_list">
-                        <datalist id="incoterm_list">
-                            <option value="ERW"></option>
-                            <option value="ERW2"></option>
-                            <option value="ERW3"></option>
-                            <option value="ERW4"></option>
-                            <option value="ERW5"></option>
-                        </datalist>
+                <div class="check__block_2_column">
+                    <div>
+                        <div class="check_block ">
+                            <div class="row-between2">
+                                <p class="text">Your Name</p>
+                                <p class="text">:</p>
+                            </div>
+                            <p class="h3">John S. DOE</p>
+                        </div>
+                        <div class="check_block ">
+                            <div class="row-between2">
+                                <p class="text">Means of Transport</p>
+                                <p class="text">:</p>
+                            </div>
+                            <p class="h3">Transport BY Plane</p>
+                        </div>
+                        <div class="check_block ">
+                            <div class="row-between2">
+                                <p class="text">Incoterm</p>
+                                <p class="text">:</p>
+                            </div>
+                            <p class="h3">EXW</p>
+                        </div>
+                        <div class="check_block ">
+                            <div class="row-between2">
+                                <p class="text">Manufacturer Location</p>
+                                <p class="text">:</p>
+                            </div>
+                            <p class="h3">Yuejiang W Rd, Haizhu District,<br>
+                                Guangzhou, Guangdong Province</p>
+                        </div>
+                        <div class="check_block ">
+                            <div class="row-between2">
+                                <p class="text">Associated Location</p>
+                                <p class="text">:</p>
+                            </div>
+                            <p class="h3">Yuejiang W Rd, Haizhu District,<br>
+                                Guangzhou, Guangdong Province</p>
+                        </div>
                     </div>
-                    <div class="request-single-block">
-                        <label class="h3" for="transport">Means of Transport?</label>
-                        <input class="request-input-text" type="text" value="" name="" id="transport"
-                            placeholder="No matter" list="transport_list">
-                        <datalist id="transport_list">
-                            <option value="BUS"></option>
-                            <option value="TIR"></option>
-                            <option value="CROW"></option>
-                            <option value="HORSE"></option>
-                            <option value="No matter"></option>
-                        </datalist>
-                        <label class="h3" for="adress">Manufacturer Address?</label>
-                        <input class="request-input-text" type="text" value="" name="" id="adress" placeholder="Adress">
+                    <div>
+                        <div class="check_block ">
+                            <div class="row-between2">
+                                <p class="text">Destination</p>
+                                <p class="text">:</p>
+                            </div>
+                            <p class="h3">To our warehouse for
+                                tempoorary storage</p>
+                        </div>
+                        <div class="check_block ">
+                            <div class="row-between2">
+                                <p class="text">Goods Value</p>
+                                <p class="text">:</p>
+                            </div>
+                            <p class="h3">$20,000 USD</p>
+                        </div>
+                        <div class="check_block ">
+                            <div class="row-between2">
+                                <p class="text">Your Email</p>
+                                <p class="text">:</p>
+                            </div>
+                            <p class="h3">johnDOE@gmail.com</p>
+                        </div>
                     </div>
-                    <textarea class="request-input-text input-big" value="" name="" id="info"
-                        placeholder="Info..."></textarea>
 
-                </form>
+                </div>
 
             </div>
         </section>
         <section class="main__description-gray-block padding-both-vertical">
             <div class="grid">
-                <div class="request__product-forms">
-                    <form class="products-form" id="form1">
-                        <p class="h2 row-between2">Product #1 <span class="del_product" id="product1">x</span></p>
-                        <label class="h3" for="cartons1">1) No. OF Cartons</label><br>
-                        <input class="request-input-text" type="text" value="" name="" id="cartons1" placeholder="01"
-                            list="carton1_list">
-                        <datalist id="carton1_list">
-                            <option value="01"></option>
-                            <option value="02"></option>
-                            <option value="03"></option>
-                            <option value="04"></option>
-                            <option value="05"></option>
-                            <option value="06"></option>
-                            <option value="07"></option>
-                        </datalist>
-                        <p class="h3">2)
-                            <input class="radio" type="radio" name="size_carton1" id="size1">
-                            <label for="size1">Total Volume</label>
-                            <input class="radio" type="radio" name="size_carton1" id="size2" checked>
-                            <label for="size2">Single Carton Dimensions</label>
-                            <input class="request-little-input-text" type="text" name="" id="s1" value="">
-                            <label for="s1"> CM</label>
-                            <input class="request-little-input-text" type="text" name="" id="s2" value="">
-                            <label for="s2"> CM</label>
-                            <input class="request-little-input-text" type="text" name="" id="s3" value="">
-                            <label for="s3"> CM</label>
-                        </p>
-                        <p class="h3">3)
-                            <input class="radio" type="radio" name="total_weight1" id="carton_weight1">
-                            <label for="carton_weight1">Carton weight</label>
-                            <input class="radio" type="radio" name="total_weight1" id="total_weight1" checked>
-                            <label for="total_weight1">Total weight</label>
-                            <input class="request-little-input-text" style="width: 150px;margin-left:114px;" type="text"
-                                name="" id="tw1" value="">
-                            <label for="tw1"> KG</label>
-                        </p>
-                    </form>
-                    <form class="products-form" id="form2">
-                        <p class="h2 row-between2">Product #2 <span class="del_product" id="product2">x</span></p>
-                        <label class="h3" for="cartons2">1) No. OF Cartons</label><br>
-                        <input class="request-input-text" type="text" value="" name="" id="cartons2" placeholder="01"
-                            list="carton2_list">
-                        <datalist id="carton2_list">
-                            <option value="01"></option>
-                            <option value="02"></option>
-                            <option value="03"></option>
-                            <option value="04"></option>
-                            <option value="05"></option>
-                            <option value="06"></option>
-                            <option value="07"></option>
-                        </datalist>
-                        <p class="h3">2)
-                            <input class="radio" type="radio" name="size_carton2" id="size1-2">
-                            <label for="size1-2">Total Volume</label>
-                            <input class="radio" type="radio" name="size_carton2" id="size2-2" checked>
-                            <label for="size2-2">Single Carton Dimensions</label>
-                            <input class="request-little-input-text" type="text" name="" id="s1-2" value="">
-                            <label for="s1-2"> CM</label>
-                            <input class="request-little-input-text" type="text" name="" id="s2-2" value="">
-                            <label for="s2-2"> CM</label>
-                            <input class="request-little-input-text" type="text" name="" id="s3-2" value="">
-                            <label for="s3-2"> CM</label>
-                        </p>
-                        <p class="h3">3)
-                            <input class="radio" type="radio" name="total_weight2" id="carton_weight2">
-                            <label for="carton_weight2">Carton weight</label>
-                            <input class="radio" type="radio" name="total_weight2" id="total_weight2" checked>
-                            <label for="total_weight2">Total weight</label>
-                            <input class="request-little-input-text" style="width: 150px;margin-left:114px;" type="text"
-                                name="" id="tw2" value="">
-                            <label for="tw2"> KG</label>
-                        </p>
-                    </form>
-                    <p class="h2 blue" id="add_product">+ Add another product</p>
+                <div class="check__cards">
+                    <div class="check-product-card">
+                        <p class="h2-smaller">Product #1</p>
+                        <p class="text">1) No. of Cartons </p>
+                        <p class="h3">10</p>
+
+                        <p class="text">2) Single Carton Dimension </p>
+                        <p class="h3">30cm <span></span> 50cm <span></span> 90cm</p>
+
+                        <p class="text">3) Carton Weight</p>
+                        <p class="h3">500kg</p>
+                    </div>
+                    <div class="check-product-card">
+                        <p class="h2-smaller">Product #2</p>
+                        <p class="text">1) No. of Cartons </p>
+                        <p class="h3">10</p>
+
+                        <p class="text">2) Single Carton Dimension </p>
+                        <p class="h3">30cm <span></span> 50cm <span></span> 90cm</p>
+
+                        <p class="text">3) Carton Weight</p>
+                        <p class="h3">500kg</p>
+                    </div>
+                    <div class="check-product-card">
+                        <p class="h2-smaller">Product #3</p>
+                        <p class="text">1) No. of Cartons </p>
+                        <p class="h3">10</p>
+
+                        <p class="text">2) Single Carton Dimension </p>
+                        <p class="h3">30cm <span></span> 50cm <span></span> 90cm</p>
+
+                        <p class="text">3) Carton Weight</p>
+                        <p class="h3">500kg</p>
+                    </div>
+                    <div class="check-product-card">
+                        <p class="h2-smaller">Product #4</p>
+                        <p class="text">1) No. of Cartons </p>
+                        <p class="h3">10</p>
+
+                        <p class="text">2) Single Carton Dimension </p>
+                        <p class="h3">30cm <span></span> 50cm <span></span> 90cm</p>
+
+                        <p class="text">3) Carton Weight</p>
+                        <p class="h3">500kg</p>
+                    </div>
+
+
+                    <!-- <p class="h2 blue" id="add_product">+ Add another product</p> -->
                 </div>
             </div>
         </section>
         <section class="main__description-white-block padding-both-vertical">
             <div class="grid">
-                <div class="request__destination">
-                    <div class="destination-form">
-                        <label class="h3" for="destination">Destination</label>
-                        <input class="request-input-text" type="text" value="" name="" id="destination"
-                            placeholder="on DHL or UPS Immediately to Amazon" list="destination_list">
-                        <datalist id="destination_list">
-                            <option value="on DHL or UPS Immediately to Amazon"></option>
-                            <option value="22222222on DHL or UPS Immediately to Amazon"></option>
-                            <option value="333333333on DHL or UPS Immediately to Amazon"></option>
-                            <option value="444444444on DHL or UPS Immediately to Amazon"></option>
-                            <option value="555555555on DHL or UPS Immediately to Amazon"></option>
-                        </datalist>
+                <div class="price-block">
+                    <div class="price-inner-block">
+                        <p class="h2">Price for your delivery</p>
                     </div>
-                    <div class="destination-form">
-                        <label class="h3" for="value">Value of Goods</label>
-                        <input class="request-input-text" type="text" value="" name="" id="value" placeholder="">
-                    </div>
-                    <div class="destination-form">
-                        <label class="h3" for="value">Your email</label>
-                        <input class="request-input-text" type="text" value="" name="" id="email" placeholder="">
+                    <div class="price-inner-block">
+                        <div class="price-column">
+                            <p class="text border-red" > Means of Transport</p>
+                            <p class="h3-dark">Plane</p>
+                            <p class="h3-dark">Ship</p>
+                            <p class="h3-dark">Truck</p>
+                            <p class="h3-dark">Train</p>                            
+                        </div>
+                        <div class="price-column">
+                            <p class="text border-red" >Price</p>
+                            <p class="h3-dark">$5,000 USD</p>
+                            <p class="h3-dark">$5,000 USD</p>
+                            <p class="h3-dark">$5,000 USD</p>
+                            <p class="h3-dark">$5,000 USD</p>                        
+                        </div>
+                        <div class="price-column">
+                            <p class="text border-red" >Days</p>
+                            <p class="h3-dark">10 D</p>
+                            <p class="h3-dark">40 D</p>
+                            <p class="h3-dark">80 D</p>
+                            <p class="h3-dark">30 D</p>                           
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-       
+                <div class="left-right margin-top">
+                    <a class="arrow-left" href="request-page.html">Make another Request</a>
+                    <a class="arrow-right" href="accept-page.html">Accept Offer</a>
+                </div> 
+            </div>            
+        </section>        
+
     </main>
     @include('layouts.partials.footer')
 

@@ -177,9 +177,12 @@
 }
 .advantages-block-image {
   margin-bottom: 39px;
+  max-width: 86px;
 }
 .advantages-block-stripe {
   display: block;
+  height: 426px;
+  max-height: 100%;
 }
 /* main inquire */
 .main__inquire {
@@ -250,7 +253,7 @@
 }
 /* main care */
 .main__care {
-  margin-top:0px;
+  margin-top: 0px;
   grid-column: 1/15;
   width: 100%;
   min-width: 100%;
@@ -374,33 +377,37 @@ REQUEST PAGE
   text-align: left;
   color: var(--font-color-darker);
 }
-::-webkit-input-placeholder { /* Chrome */
-  color:var(--input-color);
-}
-:-ms-input-placeholder { /* IE 10+ */
+::-webkit-input-placeholder {
+  /* Chrome */
   color: var(--input-color);
 }
-::-moz-placeholder { /* Firefox 19+ */
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: var(--input-color);
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
   color: var(--input-color);
   opacity: 1;
 }
-:-moz-placeholder { /* Firefox 4 - 18 */
+:-moz-placeholder {
+  /* Firefox 4 - 18 */
   color: var(--input-color);
   opacity: 1;
 }
-.radio{
-    position: absolute;
-    z-index: -1;
-    opacity: 0;  
+.radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
-.radio+label {
+.radio + label {
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
-.radio+label::before{
+.radio + label::before {
   margin: 0 10px 0 10px;
-  content: '';
+  content: "";
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -413,11 +420,11 @@ REQUEST PAGE
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-.radio:checked+label::before {
+.radio:checked + label::before {
   border-color: var(--color-red);
   background: var(--color-red);
- }
-.request__destination{
+}
+.request__destination {
   grid-column: 3/13;
   width: 100%;
   display: flex;
@@ -425,47 +432,46 @@ REQUEST PAGE
   justify-content: space-evenly;
   align-items: center;
 }
-.destination-form{
+.destination-form {
   min-width: 70%;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
-.del_product{
+.del_product {
   cursor: pointer;
 }
-.destination-form > label{
+.destination-form > label {
   margin-right: 30px;
 }
 /* CHECK PAGES */
-.check__block_2_column{
-  grid-column: 4/12;
+.check__block_2_column {
+  grid-column: 3/13;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 70px;
-
 }
-.check_block{
+.check_block {
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 18px;
   align-items: flex-start;
 }
-.check_block .h3{
-  margin-top:0;
+.check_block .h3 {
+  margin-top: 0;
 }
-.check__cards{
+.check__cards {
   grid-column: 2/14;
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 32px;
   justify-items: center;
 }
-.check-product-card{
-  width:349px;
+.check-product-card {
+  width: 349px;
   max-width: 100%;
   height: 446px;
   max-height: 100%;
@@ -476,4 +482,67 @@ REQUEST PAGE
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   padding: 40px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between; */
+}
+.check-product-card > .h2-smaller {
+  position: relative;
+  text-align: left;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 50px 0;
+  border-bottom: 2px solid var(--color-red);
+}
+.check-product-card > .text {
+  text-align: left;
+  padding-bottom: 10px;
+}
+.check-product-card > .h3 {
+  margin-top: 0;
+}
+.check-product-card > .h3 > span {
+  margin: 0 5px;
+}
+
+/* PRICE BLOCK */
+.price-block {
+  grid-column: 2/14;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-column-gap: 70px;
+}
+.price-inner-block {
+  margin-top:1px;
+}
+.price-inner-block:nth-child(1) > .h2{
+  justify-items: flex-end;
+  text-align: left;
+}
+.price-inner-block:nth-child(2) {
+  justify-items: flex-start;  
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+}
+.left-right{
+  grid-column: 2/14;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-table{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.price-column{
+  width: 100%;
+}
+.price-column > .text{
+  text-align: left;
 }

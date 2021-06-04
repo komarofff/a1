@@ -1,4 +1,4 @@
-<div class="header__topmenu">
+<div class="grid header__topmenu">
     <img class="header__logo" src="{{asset('/img/header/logo.png')}}" srcset="{{asset('/img/header/logo@2x.png')}}">
     <nav class="header__topmenu-list">
         <ul>
