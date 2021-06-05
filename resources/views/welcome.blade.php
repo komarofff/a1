@@ -37,7 +37,7 @@ $('.main__testimonials-slider').slick({
     )
     <div class="header__content">
         <p class="header__content-title">
-            Reliable Amazon FBA
+            Reliable Amazon FBA 
         </p>
         <p class="header__content-subtitle">
             Freight Forwarding
