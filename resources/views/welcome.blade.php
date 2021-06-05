@@ -42,6 +42,7 @@ $('.main__testimonials-slider').slick({
         <p class="header__content-subtitle">
             Freight Forwarding
         </p>
+        
     </div>
     <div class="header__block">
         <div class="header__block-list">
@@ -73,7 +74,7 @@ $('.main__testimonials-slider').slick({
         <a class="button-link" href="#">Get a quote</a>
     </div>
 </header>
-<main class="grid main">
+<main class="grid main" id="app">
     <section class="main__people-blocks padding-both-vertical">
         <p class="h2">Testimonial Belt</p>
         <div class="grid">
@@ -162,78 +163,7 @@ $('.main__testimonials-slider').slick({
     </section>
     <section class="main__testimonials-block padding-both-vertical">
         <div class="grid">
-            <div class="main__testimonials-slider ">
-                <div>
-                    <div class="main__testimonials-slider-block">
-                        <p class="h3 white">Testimonials</p>
-                        <p class="h2 white">What our members have to say...</p>
-                        <img class="testimonials-small-image" src="{{asset('/img/main/layer-43.jpg')}}"
-                            srcset="{{asset('/img/main/layer-43@2x.jpg')}}">
-                        <p class="big-text white">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habes, inquam, Cato, formam eorum,
-                            de quibus loquor, philosophorum. Ad eas enim res ab Epicuro praecepta dantur. Urgent tamen
-                            et nihil remittunt. Graecum enim hunc versum nostis omnes-: Suavis laborum est praeteritorum
-                            memoria.
-                        </p>
-                        <p class="star">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
-                        <p class="text white bottom-margin-none">Patrick losey, CEO</p>
-                        <p class="smaller-text white">Rainingfire Interactive</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="main__testimonials-slider-block">
-                        <p class="h3 white">Testimonials</p>
-                        <p class="h2 white">What our members have to say...</p>
-                        <img class="testimonials-small-image" src="{{asset('/img/main/layer-43.jpg')}}"
-                            srcset="{{asset('/img/main/layer-43@2x.jpg')}}">
-                        <p class="big-text white">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habes, inquam, Cato, formam eorum,
-                            de quibus loquor, philosophorum. Ad eas enim res ab Epicuro praecepta dantur. Urgent tamen
-                            et nihil remittunt. Graecum enim hunc versum nostis omnes-: Suavis laborum est praeteritorum
-                            memoria.
-                        </p>
-                        <p class="star">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
-                        <p class="text white bottom-margin-none">Patrick losey, CEO</p>
-                        <p class="smaller-text white">Rainingfire Interactive</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="main__testimonials-slider-block">
-                        <p class="h3 white">Testimonials</p>
-                        <p class="h2 white">What our members have to say...</p>
-                        <img class="testimonials-small-image" src="{{asset('/img/main/layer-43.jpg')}}"
-                            srcset="{{asset('/img/main/layer-43@2x.jpg')}}">
-                        <p class="big-text white">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habes, inquam, Cato, formam eorum,
-                            de quibus loquor, philosophorum. Ad eas enim res ab Epicuro praecepta dantur. Urgent tamen
-                            et nihil remittunt. Graecum enim hunc versum nostis omnes-: Suavis laborum est praeteritorum
-                            memoria.
-                        </p>
-                        <p class="star">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </p>
-                        <p class="text white bottom-margin-none">Patrick losey, CEO</p>
-                        <p class="smaller-text white">Rainingfire Interactive</p>
-                    </div>
-                </div>
-
-            </div>
+            <testimonals-slider></testimonals-slider>
         </div>
     </section>
     <section class="main__advantages padding-both-vertical">
