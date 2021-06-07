@@ -14,7 +14,7 @@
 
 @section('content')
 <header class="header">
-    <img class="header__banner" src="img/header/banner-request.png" srcset="img/header/banner-request@2x.png 2x,
+    <img id="banner_image" class="header__banner" src="img/header/banner-request.png" srcset="img/header/banner-request@2x.png 2x,
              img/header/banner-request@3x.png 3x">
 
     @include('layouts.partials.topmenu', ['menu'=> [
@@ -38,7 +38,7 @@
 
 </header>
 <main class=" grid main request">
-    <section class="main__people-blocks padding-both-vertical">
+    <section class="main__people-blocks padding-both-vertical" id="section_top">
         <p class="h2">Create Your Request</p>
         <div class="grid">
 
@@ -78,7 +78,7 @@
 
         </div>
     </section>
-    <section class="main__description-gray-block padding-both-vertical">
+    <section class="main__description-gray-block padding-both-vertical"  id="section_center">
         <div class="grid">
             <div class="request__product-forms">
                 <form class="products-form" id="form1">
@@ -157,7 +157,7 @@
             </div>
         </div>
     </section>
-    <section class="main__description-white-block padding-both-vertical">
+    <section class="main__description-white-block padding-both-vertical"  id="section_bottom">
         <div class="grid">
             <form class="request__destination">
                 <div class="destination-form">
