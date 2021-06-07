@@ -14,7 +14,7 @@
 
 @section('content')
 <header class="header">
-    <img class="header__banner" src="img/header/banner-request.png" srcset="img/header/banner-request@2x.png 2x,
+<img id="banner_image" class="header__banner" src="img/header/banner-request.png" srcset="img/header/banner-request@2x.png 2x,
              img/header/banner-request@3x.png 3x">
 
     @include('layouts.partials.topmenu', ['menu'=> [
