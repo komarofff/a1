@@ -45,9 +45,9 @@
             <form class="request__blocks" action="#" id="">
                 <div class="request-single-block">
                     <label class="h3" for="name">Let's Get Acquainted?</label>
-                    <input class="request-input-text" type="text" value="" name="" id="name" placeholder="Your name...">
+                    <input class="request-input-text" type="text" value="" name="" id="name" placeholder="Your name..." required>
                     <label class="h3" for="incoterm">Incoterm?</label>
-                    <input class="request-input-text" type="text" value="" name="" id="incoterm" placeholder="EXW"
+                    <input class="request-input-text" type="text" value="" name="" id="incoterm" placeholder="EXW" required
                         list="incoterm_list">
                     <datalist id="incoterm_list">
                         <option value="EXW"></option>
@@ -59,7 +59,7 @@
                 </div>
                 <div class="request-single-block">
                     <label class="h3" for="transport">Means of Transport?</label>
-                    <input class="request-input-text" type="text" value="" name="" id="transport"
+                    <input class="request-input-text" type="text" value="" name="" id="transport" required
                         placeholder="No matter" list="transport_list">
                     <datalist id="transport_list">
                         <option value="Ship"></option>
@@ -69,7 +69,7 @@
                         <option value="Any"></option>
                     </datalist>
                     <label class="h3" for="adress">Manufacturer Address?</label>
-                    <input class="request-input-text" type="text" value="" name="" id="adress" placeholder="Adress">
+                    <input class="request-input-text" type="text" value="" name="" id="adress" placeholder="Adress" required>
                 </div>
                 <textarea class="request-input-text input-big" value="" name="" id="info"
                     placeholder="Info..."></textarea>
@@ -159,11 +159,11 @@
     </section>
     <section class="main__description-white-block padding-both-vertical">
         <div class="grid">
-            <div class="request__destination">
+            <form class="request__destination">
                 <div class="destination-form">
                     <label class="h3" for="destination">Destination</label>
                     <input class="request-input-text" type="text" value="" name="" id="destination"
-                        placeholder="on DHL or UPS Immediately to Amazon" list="destination_list">
+                        placeholder="on DHL or UPS Immediately to Amazon" list="destination_list" required>
                     <datalist id="destination_list">
                         <option value="by DHL or UPS immediately to Amazon"></option>
                         <option value="on pallet immediately to Amazon"></option>
@@ -174,13 +174,13 @@
                 </div>
                 <div class="destination-form">
                     <label class="h3" for="value">Value of Goods</label>
-                    <input class="request-input-text" type="text" value="" name="" id="value" placeholder="">
+                    <input class="request-input-text" type="text" value="" name="" id="value" placeholder="" required>
                 </div>
                 <div class="destination-form">
                     <label class="h3" for="value">Your email</label>
-                    <input class="request-input-text" type="text" value="" name="" id="email" placeholder="">
+                    <input class="request-input-text" type="email" value="" name="" id="email" placeholder="" required>
                 </div>
-            </div>
+            </form>
         </div>
     </section>
 
