@@ -546,3 +546,24 @@ REQUEST PAGE
 .price-column > .text{
   text-align: left;
 }
+.accept__block_2_column{
+  grid-column: 3/13;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+
+}
+.accept__block_2_column div .text{
+  text-align: left;
+}
+.accept__block_2_column div .h2{
+  text-align: left;
+}
+.accept-img{
+  width: 199px;
+  max-width: 100%;
+  height: 199px;
+  max-height: 100%;
+}
+.accept-block{
+  align-self: center;
+}

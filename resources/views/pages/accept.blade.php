@@ -14,8 +14,7 @@
 
 @section('content')
 <header class="header">
-<img id="banner_image" class="header__banner" src="img/header/banner-request.png" srcset="img/header/banner-request@2x.png 2x,
-             img/header/banner-request@3x.png 3x">
+<img class="header__banner" src="{{asset('/img/header/banner-check.png')}}" srcset="{{asset('/img/header/banner-check@2x.png')}}">
 
     @include('layouts.partials.topmenu', ['menu'=> [
     ['link' => '#', 'title' => 'About Us'],
@@ -39,13 +38,27 @@
 </header>
 <main class=" grid main request">
     <section class="main__people-blocks padding-both-vertical">
-        <p class="h2">Create Your Request</p>
+       
         <div class="grid">
 
-            <div class="request__blocks">
+        <div class="accept__block_2_column">
+                    <div class="accept-block">
+                        <img class="accept-img" src="{{asset('/img/main/accept.png')}}" srcset="{{asset('/img/main/accept@2x.png')}}" >
+                    </div>
+                    <div>
+                        <p class="h2">Your Requested <span class="red">#12758927</span></p>
+                        <p class="h2">Was Successfully Accepted</p>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scio enim esse quosdam,
+                            qui quavis lingua philosophari possint; Duo Reges: constructio interrete. Quos quidem tibi
+                            studiose et diligenter tractandos magnopere censeo. At, si voluptas esset bonum,
+                            desideraret.
+                        </p><p class="text">    
+                            Iam id ipsum absurdum, maximum malum neglegi. Quae cum dixisset paulumque institisset, Quid
+                            est? An hoc usque quaque, aliter in vita?</p>
+                    </div>
 
-
-            </div>
+                </div>
 
         </div>
     </section>
