@@ -78,9 +78,9 @@
 
         </div>
     </section>
-    <section class="main__description-gray-block padding-both-vertical"  id="section_center">
-        <div class="grid">
-            <div class="request__product-forms">
+    <section class="main__description-gray-block padding-both-vertical"  >
+        <div class="grid" id="section_center">
+            <div class="request__product-forms" >
                 <form class="products-form" id="form1">
                     <p class="h2 row-between2">Product #1 <span class="del_product" id="product1">x</span></p>
                     <label class="h3" for="cartons1">1) No. OF Cartons</label><br>
@@ -157,8 +157,8 @@
             </div>
         </div>
     </section>
-    <section class="main__description-white-block padding-both-vertical"  id="section_bottom">
-        <div class="grid">
+    <section class="main__description-white-block padding-both-vertical" >
+        <div class="grid"  id="section_bottom">
             <form class="request__destination">
                 <div class="destination-form">
                     <label class="h3" for="destination">Destination</label>
