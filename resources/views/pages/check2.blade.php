@@ -165,40 +165,69 @@
         </section>
         <section class="main__description-white-block padding-both-vertical">
             <div class="grid">
-                <div class="price-block">
-                    <div class="price-inner-block">
+                <div class="price-block-check2">
+                    <div class="price-inner-block-check2 border-red">
                         <p class="h2">Price for your delivery</p>
+                        <p class="h3-dark">Plane: $5,000 USD, 10D - </p>
                     </div>
-                    <div class="price-inner-block">
-                        <div class="price-column">
-                            <p class="text border-red" > Means of Transport</p>
-                            <p class="h3-dark">Plane</p>
-                            <p class="h3-dark">Ship</p>
-                            <p class="h3-dark">Truck</p>
-                            <p class="h3-dark">Train</p>                            
-                        </div>
-                        <div class="price-column">
-                            <p class="text border-red" >Price</p>
-                            <p class="h3-dark">$5,000 USD</p>
-                            <p class="h3-dark">$5,000 USD</p>
-                            <p class="h3-dark">$5,000 USD</p>
-                            <p class="h3-dark">$5,000 USD</p>                        
-                        </div>
-                        <div class="price-column">
-                            <p class="text border-red" >Days</p>
-                            <p class="h3-dark">10 D</p>
-                            <p class="h3-dark">40 D</p>
-                            <p class="h3-dark">80 D</p>
-                            <p class="h3-dark">30 D</p>                           
-                        </div>
+                    <div class="price-inner-block-check2 border-gray">
+                        <p class="strong-text">Price Component</p>
+                        <p class="strong-text">$ USD</p>
+                    </div>
+                    <div class="price-inner-block-check2 border-gray">
+                        <p class="text">EXW Charges</p>
+                        <p class="text">200</p>
+                    </div>
+                    <div class="price-inner-block-check2 border-gray">
+                        <p class="text">AirFreight</p>
+                        <p class="text">100</p>
+                    </div>
+                    <div class="price-inner-block-check2 border-gray">
+                        <p class="text">Local Chargers GE</p>
+                        <p class="text">50</p>
+                    </div>
+                    <div class="price-inner-block-check2 border-gray">
+                        <p class="text">Custom Clearance Including HS-Code</p>
+                        <p class="text">200</p>
+                    </div>
+                    <div class="price-inner-block-check2 border-red">
+                        <p class="text">Total</p>
+                        <p class="text">5000</p>
+                    </div>
+                </div>
+                <div class="price-block-check2-2column">
+                    <div></div>
+                    <div class="price-inner-block-check2-column border-gray">
+                        <p class="h3-dark">Plane</p>
+                        <p class="h3-dark">$5,000 USD</p>
+                        <p class="h3-dark">10 D</p>                        
+                    </div>
+                    <div></div>
+                    <div class="price-inner-block-check2-column border-gray">
+                        <p class="h3-dark">Ship</p>
+                        <p class="h3-dark">$5,000 USD</p>
+                        <p class="h3-dark">40 D</p>                        
+                    </div>
+                    <div></div>
+                    <div class="price-inner-block-check2-column border-gray">
+                        <p class="h3-dark">Truck</p>
+                        <p class="h3-dark">$5,000 USD</p>
+                        <p class="h3-dark">80 D</p>                        
+                    </div>
+                    <div></div>
+                    <div class="price-inner-block-check2-column border-gray">
+                        <p class="h3-dark">Train</p>
+                        <p class="h3-dark">$5,000 USD</p>
+                        <p class="h3-dark">30 D</p>                        
                     </div>
                 </div>
                 <div class="left-right margin-top">
                     <a class="arrow-left" href="request-page.html">Make another Request</a>
                     <a class="arrow-right" href="accept-page.html">Accept Offer</a>
-                </div> 
-            </div>            
-        </section>        
+                </div>
+            </div>
+
+        </section>       
 
     </main>
     @include('layouts.partials.footer')

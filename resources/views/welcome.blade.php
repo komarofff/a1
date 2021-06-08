@@ -48,25 +48,26 @@ $('.main__testimonials-slider').slick({
 </header>
 <div class="header__footer">
         <div class="header__block">
+            
             <div class="header__block-list">
                 <p class="header__block-list-link">
                     <img class="header__block-list-image" src="{{asset('/img/header/layer-24.png')}}"
                         srcset="{{asset('/img/header/layer-24@2x.png')}}">
                     <span class="h3">Shipping</span>
                     <span class="text">An hoc usque quaque</span>
-                </p>
+                </p><img class="head_block_stripe" src="{{asset('/img/header/layer-38.png')}}">
                 <p class="header__block-list-link">
                     <img class="header__block-list-image" src="{{asset('/img/header/layer-28.png')}}"
                         srcset="{{asset('/img/header/layer-28@2x.png')}}">
                     <span class="h3">Tracking</span>
                     <span class="text">An hoc usque quaque</span>
-                </p>
+                </p><img class="head_block_stripe" src="{{asset('/img/header/layer-38.png')}}">
                 <p class="header__block-list-link">
                     <img class="header__block-list-image" src="{{asset('/img/header/layer-37.png')}}"
                         srcset="{{asset('/img/header/layer-37@2x.png')}}">
                     <span class="h3">Train</span>
                     <span class="text">An hoc usque quaque</span>
-                </p>
+                </p><img class="head_block_stripe" src="{{asset('/img/header/layer-38.png')}}">
                 <p class="header__block-list-link">
                     <img class="header__block-list-image" src="{{asset('/img/header/layer-29.png')}}"
                         srcset="{{asset('/img/header/layer-29@2x.png')}}">

@@ -28,6 +28,10 @@
   grid-template-columns: repeat(12, 1fr);
 }
 .header__logo {
+  position: relative;
+  margin-top:-50px;
+  width: 200px;
+  max-width: 100%;
   object-fit: contain;
   max-width: 100%;
   grid-row: 1/1;
@@ -173,7 +177,9 @@
   margin: 0 20px;
   width: 100%;
   display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 10fr  1fr 10fr 1fr 10fr 1fr 10fr;
+    align-items: center;
+    justify-items: center;
 }
 .header__block-list-link {
   cursor: pointer;

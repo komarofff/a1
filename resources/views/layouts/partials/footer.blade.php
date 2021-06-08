@@ -11,8 +11,8 @@
 <footer class="footer padding-both-vertical">
     <div class="grid">
         <div class="footer__area">
-            <img class="header__logo" src="{{asset('/img/footer/logo-copy.png')}}"
-                srcset="{{asset('/img/footer/logo-copy@2x.png')}}">
+        <img class="header__logo" src="{{asset('/img/header/LogoE3PL.png')}}"
+                srcset="{{asset('/img/header/LogoE3PL@2x.png')}}">
             <div class="row-between">
                 <p class="text-upper stripe"> ©2020 by ForwarderOne FBA Logistics. </p>
                 <p class="text-upper stripe"> Service@ForwarderOne.com </p>

@@ -275,3 +275,21 @@ p {
   border-bottom: 2px solid var(--color-red);
   margin-bottom: 30px;
 }
+.border-gray {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-gray);
+  margin-bottom: 30px;
+}
+.strong-text{
+  font-family: Teko;
+  font-size: 150%;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.08;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--font-color-dark);
+  text-transform: uppercase;
+  padding-bottom: 0;
+}
