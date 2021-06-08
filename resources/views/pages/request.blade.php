@@ -107,9 +107,9 @@
                         <label for="s3"> CM</label>
                     </p>
                     <p class="h3">3)
-                        <input class="radio" type="radio" name="carton_weight1" value="carton_weight1" id="carton_weight1">
+                        <input class="radio" type="radio" name="weight1" value="carton_weight1" id="carton_weight1">
                         <label for="carton_weight1">Carton weight</label>
-                        <input class="radio" type="radio" name="total_weight1" value="total_weight1" id="total_weight1" checked>
+                        <input class="radio" type="radio" name="weight1" value="total_weight1" id="total_weight1" checked>
                         <label for="total_weight1">Total weight</label>
                         <input class="request-little-input-text" style="width: 150px;margin-left:114px;" type="number"
                             name="" id="tw1" value="">
@@ -143,9 +143,9 @@
                         <label for="s3-2"> CM</label>
                     </p>
                     <p class="h3">3)
-                        <input class="radio" type="radio" name="carton_weight2" value="carton_weight2" id="carton_weight2">
+                        <input class="radio" type="radio" name="weight2" value="carton_weight2" id="carton_weight2">
                         <label for="carton_weight2">Carton weight</label>
-                        <input class="radio" type="radio" name="total_weight2" value="total_weight2" id="total_weight2" checked>
+                        <input class="radio" type="radio" name="weight2" value="total_weight2" id="total_weight2" checked>
                         <label for="total_weight2">Total weight</label>
                         <input class="request-little-input-text" style="width: 150px;margin-left:114px;" type="number"
                             name="" id="tw2" value="">

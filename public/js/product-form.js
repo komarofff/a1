@@ -27,9 +27,9 @@ let formProductPattern = `
                         <label for="s3-${numberOfForm}"> CM</label>
                     </p>
                     <p class="h3">3)
-                        <input class="radio" type="radio" name="carton_weight${numberOfForm}" value="carton_weight${numberOfForm}" id="carton_weight${numberOfForm}">
+                        <input class="radio" type="radio" name="weight${numberOfForm}" value="carton_weight${numberOfForm}" id="carton_weight${numberOfForm}">
                         <label for="carton_weight${numberOfForm}">Carton weight</label>
-                        <input class="radio" type="radio" name="total_weight${numberOfForm}"  value="total_weight${numberOfForm}" id="total_weight${numberOfForm}" checked>
+                        <input class="radio" type="radio" name="weight${numberOfForm}"  value="total_weight${numberOfForm}" id="total_weight${numberOfForm}" checked>
                         <label for="total_weight${numberOfForm}">Total weight</label>
                         <input class="request-little-input-text" style="width: 150px;margin-left:114px;" type="text"
                             name="" id="tw${numberOfForm}" value="">
@@ -37,9 +37,10 @@ let formProductPattern = `
                     </p>
                 </form>
 `;
+let numberOfProduct=1;
 let productCardPattern = `
 <div class="check-product-card">
-                        <p class="h2-smaller">Product #1</p>
+                        <p class="h2-smaller">Product #${numberOfProduct}</p>
                         <p class="text">1) No. of Cartons </p>
                         <p class="h3">10</p>
 
