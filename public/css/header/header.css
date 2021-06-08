@@ -5,7 +5,11 @@
   grid-template-columns: repeat(14, 1fr);
   width: 100%;
 }
-
+.header__footer{
+  width: 100%;
+    position: relative;
+    grid-column: 3/13;
+}
 .header__banner {
   max-width: 100%;
   min-width: 100%;
@@ -142,7 +146,7 @@
 /* HEADER BLOCK */
 .header__block {
   position: relative;
-  top: 70%;
+  margin-top: -25%;
   z-index: 1;
   grid-row: 1;
   grid-column: 3/13;

@@ -6,8 +6,8 @@
 
 @endsection
 @section('style')
-<link rel="stylesheet" type="text/css" href="{{asset('/slider/slick/slick.css')}}"> 
-<link rel="stylesheet" type="text/css" href="{{asset('/slider/slick/slick-theme.css')}}"> 
+<link rel="stylesheet" type="text/css" href="{{asset('/slider/slick/slick.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/slider/slick/slick-theme.css')}}">
 @endsection
 @section('scripts')
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
@@ -28,7 +28,8 @@ $('.main__testimonials-slider').slick({
 
 @section('content')
 <header class="header">
-    <img class="header__banner" src="{{asset('/img/header/cameron-venti-1-cq-icr-wfqbi-unsplash-copy.jpg')}}" srcset="{{asset('/img/header/cameron-venti-1-cq-icr-wfqbi-unsplash-copy@2x.jpg')}}">
+    <img class="header__banner" src="{{asset('/img/header/cameron-venti-1-cq-icr-wfqbi-unsplash-copy.jpg')}}"
+        srcset="{{asset('/img/header/cameron-venti-1-cq-icr-wfqbi-unsplash-copy@2x.jpg')}}">
     @include('layouts.partials.topmenu', ['menu'=> [
     ['link' => '#', 'title' => 'About Us'],
     ['link' => '#', 'title' => 'Pricing'],
@@ -37,43 +38,45 @@ $('.main__testimonials-slider').slick({
     )
     <div class="header__content">
         <p class="header__content-title">
-            Reliable Amazon FBA 
+            Reliable Amazon FBA
         </p>
         <p class="header__content-subtitle">
             Freight Forwarding
         </p>
-        
-    </div>
-    <div class="header__block">
-        <div class="header__block-list">
-            <p class="header__block-list-link">
-                <img class="header__block-list-image" src="{{asset('/img/header/layer-24.png')}}"
-                    srcset="{{asset('/img/header/layer-24@2x.png')}}">
-                <span class="h3">Shipping</span>
-                <span class="text">An hoc usque quaque</span>
-            </p>
-            <p class="header__block-list-link">
-                <img class="header__block-list-image" src="{{asset('/img/header/layer-28.png')}}"
-                    srcset="{{asset('/img/header/layer-28@2x.png')}}">
-                <span class="h3">Tracking</span>
-                <span class="text">An hoc usque quaque</span>
-            </p>
-            <p class="header__block-list-link">
-                <img class="header__block-list-image" src="{{asset('/img/header/layer-37.png')}}"
-                    srcset="{{asset('/img/header/layer-37@2x.png')}}">
-                <span class="h3">Train</span>
-                <span class="text">An hoc usque quaque</span>
-            </p>
-            <p class="header__block-list-link">
-                <img class="header__block-list-image" src="{{asset('/img/header/layer-29.png')}}"
-                    srcset="{{asset('/img/header/layer-29@2x.png')}}">
-                <span class="h3">Plane</span>
-                <span class="text">An hoc usque quaque</span>
-            </p>
-        </div>
-        <a class="button-link" href="#">Get a quote</a>
-    </div>
+
+    </div>    
 </header>
+<div class="header__footer">
+        <div class="header__block">
+            <div class="header__block-list">
+                <p class="header__block-list-link">
+                    <img class="header__block-list-image" src="{{asset('/img/header/layer-24.png')}}"
+                        srcset="{{asset('/img/header/layer-24@2x.png')}}">
+                    <span class="h3">Shipping</span>
+                    <span class="text">An hoc usque quaque</span>
+                </p>
+                <p class="header__block-list-link">
+                    <img class="header__block-list-image" src="{{asset('/img/header/layer-28.png')}}"
+                        srcset="{{asset('/img/header/layer-28@2x.png')}}">
+                    <span class="h3">Tracking</span>
+                    <span class="text">An hoc usque quaque</span>
+                </p>
+                <p class="header__block-list-link">
+                    <img class="header__block-list-image" src="{{asset('/img/header/layer-37.png')}}"
+                        srcset="{{asset('/img/header/layer-37@2x.png')}}">
+                    <span class="h3">Train</span>
+                    <span class="text">An hoc usque quaque</span>
+                </p>
+                <p class="header__block-list-link">
+                    <img class="header__block-list-image" src="{{asset('/img/header/layer-29.png')}}"
+                        srcset="{{asset('/img/header/layer-29@2x.png')}}">
+                    <span class="h3">Plane</span>
+                    <span class="text">An hoc usque quaque</span>
+                </p>
+            </div>
+            <a class="button-link" href="#">Get a quote</a>
+        </div>
+    </div>
 <main class="grid main" id="app">
     <section class="main__people-blocks padding-both-vertical">
         <p class="h2">Testimonial Belt</p>
@@ -183,7 +186,7 @@ $('.main__testimonials-slider').slick({
                     <a class="small-button-link" href="#">Learn more</a>
                 </div>
                 <img class="advantages-block-stripe" src="{{asset('/img/main/layer-45.png')}}"
-                        srcset="{{asset('/img/main/layer-45@2x.png')}}">
+                    srcset="{{asset('/img/main/layer-45@2x.png')}}">
                 <div class="main__advantages-block">
                     <img class="advantages-block-image" src="{{asset('/img/main/layer-60.png')}}"
                         srcset="{{asset('/img/main/layer-60@2x.png')}}">
@@ -251,7 +254,7 @@ $('.main__testimonials-slider').slick({
         </div>
 
     </section>
-    
+
 </main>
 @include('layouts.partials.footer')
 
