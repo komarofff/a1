@@ -114,7 +114,7 @@
   overflow-x: hidden;
   background: var(--color-red);
   max-height: 100%;
-  display: flex;
+  /* display: flex; */
 }
 .main__testimonials-slider {
   overflow: hidden;
@@ -123,6 +123,9 @@
   flex-basis: 100%;
   justify-content: center;
   align-items: center;
+}
+.float-left{
+  float:left;
 }
 .main__testimonials-slider-block {
   max-width: 100vw;

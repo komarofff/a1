@@ -204,8 +204,8 @@
   max-height: 100%;
   max-width: 100%;
   margin:10px;
-  filter:grayscale(100%) brightness(114%);
-  -webkit-filter:grayscale(100%) brightness(114%);
+  filter:grayscale(100%) brightness(86%);
+  -webkit-filter:grayscale(100%) brightness(86%);
 }
 .header__block-list-title {
   text-transform: uppercase;

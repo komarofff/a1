@@ -166,7 +166,7 @@ $('.main__testimonials-slider').slick({
         </div>
     </section>
     <section class="main__testimonials-block padding-both-vertical">
-        <div class="grid">
+            <div class="grid2" style="display:block;">
             <testimonals-slider></testimonals-slider>
         </div>
     </section>
