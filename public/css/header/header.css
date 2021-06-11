@@ -195,7 +195,7 @@
   flex-shrink: 2;
   margin:10px; 
 }
-.header__block-list-link:hover .header__block-list-image {
+.header__block-list-link:hover .header__block-list-image { 
     filter:grayscale(0.01) brightness(100%);
     -webkit-filter:grayscale(0.01) brightness(100%);
 }
@@ -204,8 +204,8 @@
   max-height: 100%;
   max-width: 100%;
   margin:10px;
-  filter:grayscale(100%) brightness(86%);
-  -webkit-filter:grayscale(100%) brightness(86%);
+  filter:grayscale(100%) brightness(109%);
+  -webkit-filter:grayscale(100%) brightness(109%);
 }
 .header__block-list-title {
   text-transform: uppercase;

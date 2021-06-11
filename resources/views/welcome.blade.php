@@ -48,6 +48,37 @@ $('.main__testimonials-slider').slick({
 </header>
 <div class="header__footer">
         <div class="header__block">
+            <div class="header__block-list">
+                <p class="header__block-list-link">
+                    <img class="header__block-list-image" src="{{asset('/img/svg/Shipping.svg')}}"
+                        srcset="{{asset('/img/svg/Shipping@2x.svg')}}">
+                    <span class="h3">Shipping</span>
+                    <span class="text">An hoc usque quaque</span>
+                </p><img class="head_block_stripe" src="{{asset('/img/header/layer-38.png')}}">
+                <p class="header__block-list-link">
+                    <img class="header__block-list-image" src="{{asset('/img/svg/tracking.svg')}}"
+                        srcset="{{asset('/img/svg/tracking@2x.svg')}}">
+                    <span class="h3">Tracking</span>
+                    <span class="text">An hoc usque quaque</span>
+                </p><img class="head_block_stripe" src="{{asset('/img/header/layer-38.png')}}">
+                <p class="header__block-list-link">
+                    <img class="header__block-list-image" src="{{asset('/img/svg/train.svg')}}"
+                        srcset="{{asset('/img/svg/train@2x.svg')}}">
+                    <span class="h3">Train</span>
+                    <span class="text">An hoc usque quaque</span>
+                </p><img class="head_block_stripe" src="{{asset('/img/header/layer-38.png')}}">
+                <p class="header__block-list-link">
+                    <img class="header__block-list-image" src="{{asset('/img/svg/plane.svg')}}"
+                        srcset="{{asset('/img/svg/plane.svg')}}">
+                    <span class="h3">Plane</span>
+                    <span class="text">An hoc usque quaque</span>
+                </p>
+            </div>
+            <a class="button-link" href="request-page.html">Get a quote</a>
+        </div>
+    </div>
+<!-- <div class="header__footer">
+        <div class="header__block">
             
             <div class="header__block-list">
                 <p class="header__block-list-link">
@@ -77,7 +108,7 @@ $('.main__testimonials-slider').slick({
             </div>
             <a class="button-link" href="#">Get a quote</a>
         </div>
-    </div>
+</div> -->
 <main class="grid main" id="app">
     <section class="main__people-blocks padding-both-vertical">
         <p class="h2">Testimonial Belt</p>

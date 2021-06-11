@@ -1875,51 +1875,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -37477,144 +37432,59 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "div",
+    { staticClass: "main__testimonials-slider " },
+    _vm._l(3, function(n) {
+      return _c("div", [_vm._m(0, true)])
+    }),
+    0
+  )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "main__testimonials-slider " }, [
-      _c("div", [
-        _c("div", { staticClass: "main__testimonials-slider-block" }, [
-          _c("p", { staticClass: "h3 white" }, [_vm._v("Testimonials")]),
-          _vm._v(" "),
-          _c("p", { staticClass: "h2 white" }, [
-            _vm._v("What our members have to say...")
-          ]),
-          _vm._v(" "),
-          _c("img", {
-            staticClass: "testimonials-small-image",
-            attrs: {
-              src: "/img/main/layer-43.jpg",
-              srcset: "img/main/layer-43@2x.jpg"
-            }
-          }),
-          _vm._v(" "),
-          _c("p", { staticClass: "big-text white" }, [
-            _vm._v(
-              "\n                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habes, inquam, Cato, formam eorum,\n                        de quibus loquor, philosophorum. Ad eas enim res ab Epicuro praecepta dantur. Urgent tamen\n                        et nihil remittunt. Graecum enim hunc versum nostis omnes-: Suavis laborum est praeteritorum\n                        memoria.\n                    "
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "star" }, [
-            _c("span", { staticClass: "material-icons" }, [_vm._v("star")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "material-icons" }, [_vm._v("star")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "material-icons" }, [_vm._v("star")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "material-icons" }, [_vm._v("star")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "material-icons" }, [_vm._v("star")])
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "text white bottom-margin-none" }, [
-            _vm._v("Patrick losey, CEO")
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "smaller-text white" }, [
-            _vm._v("Rainingfire Interactive")
-          ])
-        ])
+    return _c("div", { staticClass: "main__testimonials-slider-block" }, [
+      _c("p", { staticClass: "h3 white" }, [_vm._v("Testimonials")]),
+      _vm._v(" "),
+      _c("p", { staticClass: "h2 white" }, [
+        _vm._v("What our members have to say...")
       ]),
       _vm._v(" "),
-      _c("div", [
-        _c("div", { staticClass: "main__testimonials-slider-block" }, [
-          _c("p", { staticClass: "h3 white" }, [_vm._v("Testimonials")]),
-          _vm._v(" "),
-          _c("p", { staticClass: "h2 white" }, [
-            _vm._v("What our members have to say...")
-          ]),
-          _vm._v(" "),
-          _c("img", {
-            staticClass: "testimonials-small-image",
-            attrs: {
-              src: "img/main/layer-43.jpg",
-              srcset: "img/main/layer-43@2x.jpg"
-            }
-          }),
-          _vm._v(" "),
-          _c("p", { staticClass: "big-text white" }, [
-            _vm._v(
-              "\n                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habes, inquam, Cato, formam eorum,\n                        de quibus loquor, philosophorum. Ad eas enim res ab Epicuro praecepta dantur. Urgent tamen\n                        et nihil remittunt. Graecum enim hunc versum nostis omnes-: Suavis laborum est praeteritorum\n                        memoria.\n                    "
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "star" }, [
-            _c("span", { staticClass: "material-icons" }, [_vm._v("star")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "material-icons" }, [_vm._v("star")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "material-icons" }, [_vm._v("star")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "material-icons" }, [_vm._v("star")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "material-icons" }, [_vm._v("star")])
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "text white bottom-margin-none" }, [
-            _vm._v("Patrick losey, CEO")
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "smaller-text white" }, [
-            _vm._v("Rainingfire Interactive")
-          ])
-        ])
+      _c("img", {
+        staticClass: "testimonials-small-image",
+        attrs: {
+          src: "/img/main/layer-43.jpg",
+          srcset: "img/main/layer-43@2x.jpg"
+        }
+      }),
+      _vm._v(" "),
+      _c("p", { staticClass: "big-text white" }, [
+        _vm._v(
+          "\n                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habes, inquam, Cato, formam eorum,\n                        de quibus loquor, philosophorum. Ad eas enim res ab Epicuro praecepta dantur. Urgent tamen\n                        et nihil remittunt. Graecum enim hunc versum nostis omnes-: Suavis laborum est praeteritorum\n                        memoria.\n                    "
+        )
       ]),
       _vm._v(" "),
-      _c("div", [
-        _c("div", { staticClass: "main__testimonials-slider-block" }, [
-          _c("p", { staticClass: "h3 white" }, [_vm._v("Testimonials")]),
-          _vm._v(" "),
-          _c("p", { staticClass: "h2 white" }, [
-            _vm._v("What our members have to say...")
-          ]),
-          _vm._v(" "),
-          _c("img", {
-            staticClass: "testimonials-small-image",
-            attrs: {
-              src: "img/main/layer-43.jpg",
-              srcset: "img/main/layer-43@2x.jpg"
-            }
-          }),
-          _vm._v(" "),
-          _c("p", { staticClass: "big-text white" }, [
-            _vm._v(
-              "\n                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habes, inquam, Cato, formam eorum,\n                        de quibus loquor, philosophorum. Ad eas enim res ab Epicuro praecepta dantur. Urgent tamen\n                        et nihil remittunt. Graecum enim hunc versum nostis omnes-: Suavis laborum est praeteritorum\n                        memoria.\n                    "
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "star" }, [
-            _c("span", { staticClass: "material-icons" }, [_vm._v("star")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "material-icons" }, [_vm._v("star")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "material-icons" }, [_vm._v("star")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "material-icons" }, [_vm._v("star")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "material-icons" }, [_vm._v("star")])
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "text white bottom-margin-none" }, [
-            _vm._v("Patrick losey, CEO")
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "smaller-text white" }, [
-            _vm._v("Rainingfire Interactive")
-          ])
-        ])
+      _c("p", { staticClass: "star" }, [
+        _c("span", { staticClass: "material-icons" }, [_vm._v("star")]),
+        _vm._v(" "),
+        _c("span", { staticClass: "material-icons" }, [_vm._v("star")]),
+        _vm._v(" "),
+        _c("span", { staticClass: "material-icons" }, [_vm._v("star")]),
+        _vm._v(" "),
+        _c("span", { staticClass: "material-icons" }, [_vm._v("star")]),
+        _vm._v(" "),
+        _c("span", { staticClass: "material-icons" }, [_vm._v("star")])
+      ]),
+      _vm._v(" "),
+      _c("p", { staticClass: "text white bottom-margin-none" }, [
+        _vm._v("Patrick losey, CEO")
+      ]),
+      _vm._v(" "),
+      _c("p", { staticClass: "smaller-text white" }, [
+        _vm._v("Rainingfire Interactive")
       ])
     ])
   }
